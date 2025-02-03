@@ -1,0 +1,65 @@
+.actions {
+  display: flex;
+  justify-content: flex-end
+}
+
+.button-delete {
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.button-edit {
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.note {
+  background-color: #F8F9FE;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.note .content {
+  margin: 1rem auto;
+  word-wrap: break-word;
+}
+
+.note .author {
+  word-wrap: break-word;
+}
+
+.model1 {
+  box-shadow: 8px 8px 0px #154580;
+}
+
+.model2 {
+  box-shadow: 8px 8px 0px #6BD1FF;
+}
+
+.model3 {
+  box-shadow: 8px 8px 0px #84EEC1;
+}
+
+.note-l {
+  width: 556px;
+}
+
+.note-s {
+  width: 262px;
+}
+
+@media screen and (max-width: 768px) {
+  .note-l {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .note-s {
+    width: 100%;
+  }
+}

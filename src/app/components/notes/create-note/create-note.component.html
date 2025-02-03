@@ -1,0 +1,65 @@
+<section class="container create-notes ff-inter">
+  <header class="header">
+    <h2>Add a <br>new note:</h2>
+  </header>
+  <form>
+    <label for="note">Note</label>
+    <input type="textarea" class="input" id="note" name="note" placeholder="Type your note here..."
+      [(ngModel)]="note.content">
+    <label for="author">Author</label>
+    <input type="text" class="input" id="author" name="author" placeholder="Type the author here..."
+      [(ngModel)]="note.author">
+    <label for="model">Select the model</label>
+    <div class="container-radio">
+
+      <div class="radio-model">
+        <label for="model1">
+          <input type="radio" id="model1" name="model-card" value="model1" [(ngModel)]="note.model">
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Model 1</span>
+        </label>
+        <div class="model model1 ff-roboto-mono">
+          <img src="../../../assets/images/model1.png" alt="dark-blue">
+          <p class="content">{{ note.content }}</p>
+          <p class="author"><b>{{ note.author }}</b></p>
+        </div>
+      </div>
+
+      <div class="radio-model">
+        <label for="model2">
+          <input type="radio" id="model2" name="model-card" value="model2" [(ngModel)]="note.model">
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Model 2</span>
+        </label>
+        <div class="model model2 ff-roboto-mono">
+          <img src="../../../assets/images/model2.png" alt="light-blue">
+          <p class="content">{{ note.content }}</p>
+          <p class="author"><b>{{ note.author }}</b></p>
+        </div>
+      </div>
+
+      <div class="radio-model">
+        <label for="model3">
+          <input type="radio" id="model3" name="model-card" value="model3" [(ngModel)]="note.model">
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Model 3</span>
+        </label>
+        <div class="model model3 ff-roboto-mono">
+          <img src="../../../assets/images/model3.png" alt="green">
+          <p class="content">{{ note.content }}</p>
+          <p class="author"><b>{{ note.author }}</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+      <button (click)="createNote()" class="button">Submit</button>
+      <button (click)="cancel()" class="button">Cancel</button>
+    </div>
+  </form>
+</section>
