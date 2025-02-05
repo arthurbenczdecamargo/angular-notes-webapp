@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class NoteService {
 
-  private readonly API = 'http://localhost:3000/notes';
+  private readonly API = 'https://api-alpha-sage.vercel.app/notes';
 
   constructor(private http: HttpClient) { }
   listNotes(): Observable<Notes[]> {
